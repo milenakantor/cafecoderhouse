@@ -5,7 +5,7 @@ padding: 0;
 box-sizing: border-box
 
 }
-
+ /* HEADER */
 header {
   display: flex;
   justify-content: space-around;
@@ -50,7 +50,7 @@ header a {
 }
 
 header h2 {
-  color: #858583;
+  color: #535350;
   font-family: "Poppins", sans-serif;
   font-weight: 550;
   font-style: normal;
@@ -62,6 +62,7 @@ header h2 {
   padding-left: 20px;
 }
 
+ /* PAGINA HOME */
 .seccion1 {
 
   background-image: url(fotos/bolsa2.png);
@@ -280,9 +281,9 @@ margin-bottom: 20px;
   display: inline-block;
   background-color: #848061;
   color: white;
-  padding: 8px 16px; /* reduce el padding */
+  padding: 8px 16px; 
   text-decoration: none;
-  font-size: 1em; /* reduce el tamaño de la fuente */
+  font-size: 1em; 
   transition: background-color 0.3s ease;
   margin-top: 30px;
   font-family: "Oswald", sans-serif;
@@ -290,9 +291,9 @@ margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.7px;
-  flex: 0 0 auto; /* evita que crezca o encoja */
+  flex: 0 0 auto; 
   padding: 8px 16px;
-  max-width: fit-content; /* ajusta al contenido */
+  max-width: fit-content;
 }
 
 .seccion5 {
@@ -352,9 +353,9 @@ margin-bottom: 20px;
   display: inline-block;
   background-color: #848061;
   color: white;
-  padding: 8px 16px; /* reduce el padding */
+  padding: 8px 16px;
   text-decoration: none;
-  font-size: 1em; /* reduce el tamaño de la fuente */
+  font-size: 1em; 
   transition: background-color 0.3s ease;
   margin-top: 30px;
   font-family: "Oswald", sans-serif;
@@ -362,92 +363,91 @@ margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.7px;
-  flex: 0 0 auto; /* evita que crezca o encoja */
+  flex: 0 0 auto; 
   padding: 8px 16px;
-  max-width: fit-content; /* ajusta al contenido */
+  max-width: fit-content; 
 }
 
+ /* FOOTER */ 
 footer {
-  background-color: #111111;
-  /* Fondo oscuro */
-  color: white;
-  padding: 40px 0;
+  background-color: #f9fafb;
+  height: 50vh;
+  color: #535350;
+  
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 90px;
+}
 
-.footer-info,
+.footer-info {
+display: flex;
+flex-direction: column;
+padding-left: 150px;
+
+}
 .footer-hours {
-  width: 45%;
+  display: flex;
+flex-direction: column;
+padding-left: 400px;
 }
 
 footer h3 {
   font-size: 2em;
-  margin-bottom: 15px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 480;
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 footer p {
   font-size: 1em;
-  margin: 10px 0;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   list-style-type: none;
-  padding-left: 0;
 }
 
 footer p strong {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 450;
   letter-spacing: 2px;
   font-style: normal;
-  color: #AB886D;
+  color: #848061;
 }
 
 .menu-button {
   display: inline-block;
-  background-color: #AB886D;
-  ;
-  /* Naranja */
+  background-color: #848061;
   color: white;
-  padding: 12px 24px;
+  padding: 8px 16px;
   text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
+  font-size: 1em; 
   transition: background-color 0.3s ease;
-  margin-top: 15px;
+  margin-top: 5px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.7px;
+  flex: 0 0 auto; 
+  padding: 8px 16px;
+  max-width: fit-content; 
 
 }
 
 
-/* Responsividad: Asegura que en pantallas pequeñas las columnas se apilen */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-info,
-  .footer-hours {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
+ /* PAGINA MENU */
 
 .seccionM1 {
 
-  background-image: url(fotos/FC017D99-3F16-4D7E-AF49-0F0D0CB40DD3_1_201_a.jpeg);
+  background-image: url(fotos/drink.jpg);
   background-size: cover;
   /* La imagen cubre todo el fondo */
   background-position: center center;
@@ -456,12 +456,11 @@ footer p strong {
   /* No repite la imagen */
   height: 75vh;
   /* Ocupa el 100% de la altura de la ventana */
-
+  margin-bottom: 60px;
 
 }
 
 .seccionM1 p {
-
   font-style: normal;
   text-decoration: none;
   list-style-type: none;
@@ -470,13 +469,10 @@ footer p strong {
   font-weight: 400;
   font-style: normal;
   font-size: 1em;
-
 }
 
 
 .seccionM1 h1 {
-
-
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -487,8 +483,40 @@ footer p strong {
   justify-content: center;
   align-items: center;
   color: #333333;
-  /* Para el texto sobre el fondo */
+
 }
+
+.card {
+margin: 0px 20px;
+}
+
+.card-title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #8c5d25;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+
+}
+ 
+ /* PAGINA GUIDE */
 
 .gridfotos {
   display: grid;
@@ -524,6 +552,8 @@ footer p strong {
 .img3 { grid-area: img3; }
 .img4 { grid-area: img4; }
 .img5 { grid-area: img5; }
+
+
 
 
 .email {
@@ -607,6 +637,8 @@ footer p strong {
     justify-content: center;
     align-items: center;
     position: relative;
+    position: sticky;
+  top: 0;
   
   }
   .padreflexheader {
@@ -630,7 +662,7 @@ header h2 {
 }
 .seccion1 {
   height: 30vh;
-  /* Ocupa el 100% de la altura de la ventana */
+  
 }
 .H1primero {
   font-size: 2.4em;
@@ -754,7 +786,50 @@ height: 30vh;
     object-fit: cover; 
   }
 
+footer {
+  height: 20vh;
+  letter-spacing: 0.5px;
 
- 
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 20px
+  
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+
+  }
+  .footer-hours {
+    display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  }
+  footer h3 {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+  footer p {
+    font-size: 0.7em;
+    line-height: 1.5;
+
+  }
+
+  footer p strong {
+    letter-spacing: 1px;
+    line-height: 1;
+    
+  }
+  .menu-button {
+    display: none;
+  }
+  .addressfooter {
+    display: none;
+  }
 }
 
