@@ -447,16 +447,20 @@ footer p strong {
 
 .seccionM1 {
 
-  background-image: url(fotos/drink.jpg);
+background-color: #f1f0ed;
   background-size: cover;
   /* La imagen cubre todo el fondo */
   background-position: center center;
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* No repite la imagen */
-  height: 75vh;
+  height: 40vh;
   /* Ocupa el 100% de la altura de la ventana */
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 
 }
 
@@ -467,8 +471,10 @@ footer p strong {
   color: #666666;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
+  font-size: 0.9em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -482,12 +488,13 @@ footer p strong {
   letter-spacing: 2px;
   justify-content: center;
   align-items: center;
-  color: #333333;
+  color: #a2998e;
+  text-align: center;
 
 }
 
 .card {
-margin: 0px 20px;
+margin: 20px 20px;
 }
 
 .card-title {
@@ -504,19 +511,205 @@ margin: 0px 20px;
   text-transform: uppercase;
 }
 
+
 .card-text {
   color: #666666;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 1px;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 400;
   justify-content: center;
   text-align: center;
 
 }
- 
+
+.seccionM2 {
+
+  background-color: #f1f0ed;
+    background-size: cover;
+    /* La imagen cubre todo el fondo */
+    background-position: center center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* No repite la imagen */
+    height: 40vh;
+    /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .seccionM2 p {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    color: #666666;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .seccionM2 h1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5em;
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    color: #a2998e;
+    text-align: center;
+  }
  /* PAGINA GUIDE */
+ 
+ .production {
+  background-color: #f1f0ed;
+  background-size: cover;
+  /* La imagen cubre todo el fondo */
+  background-position: center center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* No repite la imagen */
+  height: 40vh;
+  /* Ocupa el 100% de la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+ .production h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5em;
+  display: flex;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  color: #a2998e;
+  text-align: center;
+ }
+
+ .production p {
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+
+.todointro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+ .introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .introduction h3 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color:  #8c5d25;
+  text-transform: uppercase;
+  margin-top: 30px;
+
+ }
+
+ .introduction p {
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em; 
+  padding-bottom: 15px;
+  padding-top: 8px;
+  line-height: 2;
+ }
+
+ .intro {
+  padding-right: 200px;
+ }
+
+ .willneed {
+padding-right: 100px;;
+
+ }
+
+.todointro img {
+  height: auto;
+  width: 120vh;
+  margin-bottom: 40px;
+
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .steps h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #a2998e;
+ padding-top: 40px;
+ padding-bottom: 15 px;
+
+ }
+
+ .steps p{
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em; 
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 2;
+ }
+
+ .steps img {
+  height: auto;
+  width: 120vh;
+  margin-bottom: 40px;
+ 
+ }
+
+ /* PAGINA ABOUT */
 
 .gridfotos {
   display: grid;
@@ -605,30 +798,6 @@ margin: 0px 20px;
 }
 
 
-.steps h2 {
-  font-family: "Poppins", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3em;
-  display: flex;
-  letter-spacing: 2px;
-  align-items: center;
-  color: #333333;
-  /* Para el texto sobre el fondo */
-
-}
-
-.steps p {
-  font-style: normal;
-  text-decoration: none;
-  list-style-type: none;
-  color: #666666;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-}
 
 @media (max-width:500px) {
   header {
