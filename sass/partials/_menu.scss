@@ -1,0 +1,74 @@
+@use "variables" as*;
+
+ /* PAGINA MENU */
+ 
+.seccionM1 {
+    background-color: $cremita;
+      @include cubreimagen;
+      height: 40vh;
+     @include flexC-center;
+      margin-bottom: 30px;
+
+      p {
+        @include letranormal;
+        color: $grismasclaro;
+        font-family: $letratexto;
+        font-weight: 350;
+        font-size: 0.9em;
+        @include todocenter;
+    
+      }
+
+      h1 {
+        font-family: $letratitulo;
+        font-optical-sizing: auto;
+        font-weight: $fw500;
+        font-style: normal;
+        font-size: 5em;
+        display: flex;
+        letter-spacing: 2px;
+        @include todocenter;
+        color: $griscremita;
+       
+      }
+      
+    }
+    
+    .card-title {
+      font-family: $letratitulo;
+      font-optical-sizing: auto;
+      font-weight: 450;
+      font-style: normal;
+      font-size: 1em;
+      letter-spacing: 1px;
+      display: flex;
+      @include todocenter;
+      color: $griscremita;
+      text-transform: uppercase;
+    }
+    
+    .card-text {
+      color: $grismasclaro;
+      font-family: $letratexto;
+      font-size: 0.7em;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      font-weight: 400;
+      @include todocenter;
+    }
+    
+    .seccionM2 {
+     @extend .seccionM1;
+     margin-top: 20px;
+        p {
+          @extend p;
+          }
+          h2 {
+          @extend h1;
+          }
+        
+      }
+      
+      
+    
+    

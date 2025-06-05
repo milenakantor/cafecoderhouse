@@ -1,0 +1,385 @@
+@use "variables" as*;
+@use "menu" as*;
+
+
+@media (max-width: 500px) {
+    /* HEADER */
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      position: sticky;
+      top: 0;
+
+      .padreflexheader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+      }
+      h2 {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        font-size: 1em;
+        letter-spacing: 0.5px;
+        font-weight: 520;
+        padding-top: 10px;
+      }
+    }
+   
+  
+  
+    /* INDEX */
+    .seccion1 {
+      height: 35vh;
+  
+      .H1primero {
+        font-size: 2.4em;
+        display: flex;
+        letter-spacing: 3px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+  
+      p {
+        font-size: 0.7em;
+        margin: 2px;
+      }
+  
+      a {
+        font-size: 0.3em;
+        background-color: #AB886D;
+        background-size: contain;
+        padding: 4px 8px;
+        margin: 20px;
+        letter-spacing: 1px;
+      }
+    }
+   
+    .seccion2 {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+  
+      .jean {
+        justify-content: flex-start;
+        width: 50%;
+        height: 35vh;
+      }
+  
+      .bar {
+        justify-content: flex-end;
+        width: 50%;
+        height: 35vh;
+      }
+    }
+    
+    .seccion31 {
+      height: 22vh;
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.5em;
+      }
+    
+    }
+  .seccion3 {
+  height: 30vh;
+  }
+  
+  .seccion4 {
+   @include flexC;
+
+   .texto4{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+   }
+
+    h2 {
+        font-size: 1.2em;
+      }
+       p {
+        font-size: 0.5em;
+        letter-spacing: 0.7px;
+        line-height: 2;
+        font-weight: 350;
+      }
+    
+      .menu-button {
+        font-size: 0.5em; 
+        margin-top: 3px;
+        padding: 4px 8px;
+        max-width: fit-content; 
+        border-radius: 0%;
+      }
+      .image-container {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+      }
+      .image {
+        height: 30vh;
+        object-fit: cover; 
+      }
+  }
+  .seccion5 {
+    .columna5 {
+      display: none;
+    
+    }
+    .image2 {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover; 
+    }
+
+}
+     /* FOOTER */ 
+  
+  footer {
+    height: 30vh;
+    letter-spacing: 0.5px;
+  
+  }
+  .footer-container {
+    @include flexR;
+    justify-content: flex-start;
+    padding-top: 20px
+    
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    }
+    .footer-hours {
+      display: none;
+    }
+    footer h3 {
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    }
+    footer p {
+      font-size: 0.7em;
+      line-height: 1.5;
+  
+    }
+    footer p strong {
+      letter-spacing: 1px;
+      line-height: 1;
+      
+    }
+   /* PAGINA MENU */
+  
+   .seccionM1 {
+    height: 20vh;
+
+    p {
+        font-size: 0.6em;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+   }
+  
+  .seccionM2 {
+    height: 20vh;
+
+    p {
+        font-size: 0.6em;
+      }
+      
+      h2 {
+        font-size: 2.5em;
+      }
+  }
+
+  
+   /* PAGINA GUIDE */
+   .production {
+    height: 20vh;
+
+    p {
+        font-size: 0.6em;
+      }
+      
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+  
+  .introduction {
+    @include flexC;
+
+   h2 {
+        font-size: 0.9em; 
+        margin-top: 0px;
+      }
+   p {
+        font-size: 0.7em;
+        padding-bottom: 0px;
+      }
+      
+   }
+ 
+  .intro2 {
+    display: none;
+  }
+  
+  .intro {
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .willneed {
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+     }
+    
+  .brew {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .todointro img {
+    height: 25vh;
+    width: 40vh;
+    margin-bottom: 40px;
+  
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   h3 {
+        font-size: 1em;
+        color: #a2998e;
+       padding-top: 20px;
+       padding-bottom: 5px;
+       padding-left: 10px;
+       }
+      
+        p{
+        font-size: 0.6em; 
+        padding-left: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+      
+       }
+      
+      img {
+        height: 25vh;
+        width: 40vh;
+        margin-bottom: 20px;
+       margin-left: 10px;
+       margin-right: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+       }
+  }
+ /* ABOUT */
+   .about1 {
+    height: 20vh;
+
+    p {
+        font-size: 0.6em;
+      }
+      
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+  
+  .seccionC1 {
+    height: 20vh;
+     
+p {
+    font-size: 0.7em;
+  }
+  
+ h1 {
+    font-size: 3em;
+  }
+   }
+
+   .seccionC1 {
+    height: 20vh;
+
+    p {
+        font-size: 0.6em;
+      }
+      
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+  
+  .seccionC2 {
+  
+    background-image: url(fotos/IMG_1307.jpeg) ;
+   @include cubreimagen;
+    height: 32vh;
+    .email {
+        font-size: 1.5em;
+        margin-left: 60px;
+        padding-top: 45px;
+      }
+      .formulario {
+        margin-left: 60px;
+      }
+      .name {
+        height: 2vh;
+        width: 15vh;
+        }
+      .adress {
+        height: 2vh;
+        width: 15vh;
+      }
+      
+      .requirements {
+        height: 10vh;
+        width: 32vh;
+        margin-top: 10px;
+        margin-left: 60px;
+      }
+      .submit {
+        padding: 5px 10px;
+        font-size: 0.6em;
+        margin-top: 10px;
+        margin-left: 300px;
+        margin-bottom: 15px;
+      }
+      
+  }
+  .maps {
+    height: 30vh;
+    width: 100%;
+  } 
+  
+  }
+  
+  

@@ -1,0 +1,212 @@
+@use "variables" as*;
+@use "menu" as*;
+
+* {
+  margin: 0;
+ padding: 0;
+ box-sizing: border-box
+ 
+ }
+/* PAGINA ABOUT */
+.about1 {
+    @extend .seccionM1;
+    h1 {
+      @extend h1;
+     }
+
+     p {
+      @extend p;
+     }
+
+   } 
+  .col a {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    color: $grismasclaro;
+    font-family: $letratexto;
+    font-weight: 400;
+    font-size: 0.9em;
+    display: flex;
+    @include todocenter;
+  }
+
+  .seccion31a {
+    background-color: $cremita;
+     height: 40vh;
+    @include flexC-center;
+     text-align: center;
+ 
+     h2 {
+         font-family: $letratitulo;
+         font-optical-sizing: auto;
+         font-weight: 500;
+         font-style: normal;
+         font-size: 2.5em;
+         letter-spacing: 1.5px;
+         display: flex;
+         @include todocenter;
+         color: $verdecito;
+         text-transform: uppercase;
+         margin: 10px;
+       }
+       p {
+         color: $verdecito;
+         font-family: $letratexto;
+         font-weight: 375;
+         @include letranormal;
+         font-size: 0.8em;
+       }
+   
+   }
+   
+   .seccion3 {
+   
+     background-image: url(../fotos/IMG_1317.jpeg);
+     @include cubreimagen;
+     height: 80vh;
+   @include flexR-center;
+   
+   .play {
+     max-width: 40vw; 
+     max-height: 40vw;  
+     width: auto;
+     height: auto;
+   }
+   }
+  
+  /* From Uiverse.io by Yaya12085 */ 
+
+.comentarios {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 45px;
+height: 350px;
+
+
+
+  .comments {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+      .task {
+        position: relative;
+        color: #2e2e2f;
+        cursor: move;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+        margin-bottom: 1rem;
+        border: 3px dashed transparent;
+        max-width: 400px;
+       
+        p {
+          font-size: 12px;
+          margin: 1.2rem 0;
+          font-family: $letratexto;
+    
+        }
+        
+      }
+      
+      .task:hover {
+        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+        border-color: rgba(162, 179, 207, 0.2) !important;
+      }
+      
+      
+      .tag {
+        border-radius: 100px;
+        padding: 4px 13px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: $verdecito;
+        font-family: $letratexto;
+      }
+      
+      .tags {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .options {
+        background: transparent;
+        border: 0;
+        color: #c4cad3;
+        font-size: 17px;
+
+        svg {
+          fill: #9fa4aa;
+          width: 20px;
+        }
+      }
+      
+      
+      .stats {
+        position: relative;
+        width: 100%;
+        color: #9fa4aa;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          margin-right: 1rem;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        svg {
+          margin-right: 5px;
+          height: 100%;
+          stroke: #9fa4aa;
+        }
+        
+      }
+      
+
+      .viewer span {
+        height: 30px;
+        width: 30px;
+        background-color: $verdecito;
+        margin-right: -10px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        padding: 2px;
+      }
+      
+      .viewer span svg {
+        stroke: #fff;
+      }
+    
+      
+    
+    }
+
+
+}
+
+
+
+
+
+
+

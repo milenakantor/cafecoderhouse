@@ -1,0 +1,107 @@
+@use "variables" as*;
+@use "menu" as*;
+
+/* PAGINA GUIDE */
+ 
+.production {
+    @extend .seccionM1;
+    h1 {
+      @extend h1;
+     }
+
+     p {
+      @extend p;
+     }
+  
+   }
+
+  .todointro {
+   @include flexC-center;
+  
+  }
+  
+   .introduction {
+    @include flexR;
+    justify-content: center;
+
+    h2 {
+      font-family: $letratitulo;
+      font-optical-sizing: auto;
+      font-weight: 450;
+      font-style: normal;
+      font-size: 1em;
+      letter-spacing: 1px;
+      color: $marron;
+      text-transform: uppercase;
+      margin-top: 30px;
+    
+     }
+     p {
+      font-style: normal;
+      text-decoration: none;
+      list-style-type: none;
+      color: $grismasclaro;
+      font-family: $letratexto;
+      font-weight: 400;
+      font-size: 0.8em; 
+      padding-bottom: 15px;
+      line-height: 2;
+     }
+    
+   }
+
+
+   .intro {
+    padding-right: 120px;
+   }
+  
+   .intro2 {
+  padding-top: 0px;
+   }
+   .willneed {
+  padding-right: 100px;;
+  
+   }
+  
+  .todointro img {
+    height: auto;
+    width: 120vh;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+   @include flexC-center;
+
+   h3 {
+    font-family: $letratitulo;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 2em;
+    color: $griscremita;
+   padding-top: 40px;
+   padding-bottom: 15px;
+  
+   }
+
+   p{
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    color: $grismasclaro;
+    font-family: $letratexto;
+    font-weight: 400;
+    font-size: 0.8em; 
+    padding-bottom: 15px;
+    line-height: 2;
+   }
+
+   img {
+    height: auto;
+    width: 120vh;
+    margin-bottom: 20px;
+   
+   }
+  }
+
+  

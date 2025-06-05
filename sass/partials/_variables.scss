@@ -1,0 +1,80 @@
+
+
+$grisoscuro: #333333;
+$grisclaro: #535350;
+$grismasclaro: #666666;
+$verdecito: #848061;
+$blanco : white;
+$cremita: #f1f0ed;
+$griscremita: #a2998e;
+$marron: #8c5d25;
+
+
+$letratexto: "Poppins", sans-serif;
+$letratitulo: "Oswald", sans-serif;
+$hielo: #f9fafb;
+
+$fw400: 400;
+$fw500: 500;
+$fs5em: 5em;
+
+@mixin flexC {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexR {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexC-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexR-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin letranormal {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+@mixin todocenter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin tituloprincipal {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5em;
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    color: #a2998e;
+    text-align: center;
+}
+
+@mixin cubreimagen {
+    background-size: cover;
+    /* La imagen cubre todo el fondo */
+    background-position: center center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* No repite la imagen */
+
+
+}

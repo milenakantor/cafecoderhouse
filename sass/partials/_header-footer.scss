@@ -1,0 +1,141 @@
+@use "./variables" as*;
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 80px;
+    width: 100%;
+    list-style: none;
+    position: sticky;
+    top: 0;
+  background-color: white;
+
+  ul li {
+    display: flex inline; 
+      /* Hace que los elementos de la lista se muestren en línea, si es lo que deseas */
+      margin-right: 20px;
+      /* Opcional: agrega espacio entre los enlaces */
+      align-items: center;
+    }
+    
+   a {
+      color: $grismasclaro;
+      font-family: $letratexto;
+      font-weight: 420;
+      font-size: 15px;
+      font-style: normal;
+      text-decoration: none;
+      list-style-type: none;
+      &:hover {
+        color: black;
+        font-size: 17px;
+       }
+
+    }
+    
+     h2 {
+      color: $griscremita;
+      font-family: $letratexto;
+      font-weight: 550;
+      font-style: normal;
+      display: flex inline;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      font-size: 27px;
+      padding-left: 20px;
+      font-size: 1.4em;
+    }
+
+    .padreflexheader {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 50%;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    
+    }
+  }
+  
+  
+ 
+
+/* FOOTER */ 
+
+  footer {
+    background-color: $hielo;
+    height: 50vh;
+    color: $verdecito;
+  }
+  
+  .footer-container {
+@include flexR; 
+    padding-top: 90px;
+  }
+  
+  .footer-info {
+    @include flexC;
+  padding-left: 150px;
+  
+  }
+  .footer-hours {
+ @include flexC;
+  padding-left: 400px;
+  }
+  
+  footer h3 {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: $letratitulo;
+    font-optical-sizing: auto;
+    font-weight: 480;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  
+  footer p {
+    font-size: 1em;
+    font-family: $letratexto;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  footer p strong {
+    font-family: $letratitulo;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: $verdecito;
+  }
+  
+  .menu-button {
+    display: inline-block;
+    background-color: $verdecito;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1em; 
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    font-family: $letratitulo;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    flex: 0 0 auto; 
+    padding: 8px 16px;
+    max-width: fit-content; 
+
+  }
+  

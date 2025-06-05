@@ -1,0 +1,256 @@
+@use "variables" as*;
+@use "header-footer" as*;
+
+/* INDEX */
+.seccion1 {
+    background-image: url(../fotos/bolsa2.png);
+  @include cubreimagen;
+  height: 100vh;
+ @include flexC-center;
+  max-width: 100%;
+
+    .H1primero {
+        font-family: $letratitulo;
+        font-weight: $fw500;
+        font-style: normal;
+        font-size: 4.6em;
+        display: flex;
+       @include todocenter;
+        color: $blanco;
+        margin: 5px;
+        letter-spacing: 3px;
+       
+      }
+
+      p {
+        @include letranormal;
+        color: $blanco;
+        font-family: $letratexto;
+        font-weight: 400;
+        font-size: 1em;
+        margin: 5px;
+      }
+     
+      a {
+        @include letranormal;
+            color: $blanco;
+            font-family: $letratitulo;
+            font-optical-sizing: auto;
+            font-weight: $fw400;
+            font-style: normal;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.7em;
+            background-color: #806b5a;
+            background-size: contain;
+            padding: 10px 20px;
+            margin: 20px;
+            &:hover {
+              transform: scale(1.2)
+             }
+      
+          }
+  }
+
+    
+.seccion2 {
+ @include flexR;
+  height: auto;
+
+  .jean {
+    justify-content: flex-start;
+    width: 50%;
+    height: 120vh;
+    }
+
+    .bar {
+        justify-content: flex-end;
+        width: 50%;
+        height: 120vh;
+      }
+  }
+  
+.seccion31 {
+   background-image: url(../fotos/story5.jpg);
+  @include cubreimagen;
+    height: 40vh;
+   @include flexC-center;
+    text-align: center;
+
+    h2 {
+        font-family: $letratitulo;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 2.5em;
+        letter-spacing: 1.5px;
+        display: flex;
+        @include todocenter;
+        color: $blanco;
+        text-transform: uppercase;
+        margin: 10px;
+      }
+      p {
+        color: $blanco;
+        font-family: $letratexto;
+        font-weight: 375;
+        font-size: 0.8em;
+        @include letranormal;
+      }
+  
+  }
+  
+  .seccion3 {
+  
+    background-image: url(../fotos/IMG_1317.jpeg);
+    @include cubreimagen;
+    height: 80vh;
+  @include flexR-center;
+  
+  .play {
+    max-width: 30vw; 
+    max-height: 30vw;  
+    width: auto;
+    height: auto;
+    &:hover {
+      transform: scale(1.1)
+  
+     }
+
+  }
+  }
+  
+  .seccion4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: $hielo;
+   
+    h2 {
+        font-family: $letratitulo;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 2.2em;
+  letter-spacing: 1.5px;
+  color: $verdecito;
+  text-transform: uppercase;
+
+      }
+      .texto4{
+        @include flexC;
+        justify-content: space-evenly;
+        margin-left: 150px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+        }
+        p {
+            color: $grismasclaro;
+            font-family: $letratexto;
+            font-size: 0.8em;
+            letter-spacing: 0.7px;
+            line-height: 2;
+        
+          }
+
+          .image-container {
+            width: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+          }
+
+          .image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;  
+          }
+
+          .menu-button {
+            display: inline-block;
+            background-color: $verdecito;
+            color: $blanco;
+            padding: 7px 14px; 
+            text-decoration: none;
+            font-size: 1em; 
+            transition: background-color 0.3s ease;
+            margin-top: 0px;
+            font-family: $letratitulo;
+            font-optical-sizing: auto;
+            font-weight: 380;
+            font-style: normal;
+            letter-spacing: 0.7px;
+            flex: 0 0 auto; 
+            max-width: fit-content;
+          }
+          
+  }
+  
+  .seccion5 {
+    display: flex;
+    justify-content: space-between;
+    background-color: $hielo;
+
+    .columna5 {
+        display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-right: 150px;
+  margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: $letratitulo;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 2.2em;
+  letter-spacing: 1.5px;
+  color: $verdecito;
+  text-transform: uppercase;
+      }
+      
+      p {
+        color: $grismasclaro;
+            font-family: $letratexto;
+            font-size: 0.8em;
+            letter-spacing: 0.7px;
+            line-height: 2;
+      }
+      
+       
+  .imagen-container2 {
+    width: 188%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image2 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+  }
+  .menu-button {
+    display: inline-block;
+    background-color: $verdecito;
+    color: $blanco;
+    padding: 7px 14px; 
+    text-decoration: none;
+    font-size: 1em; 
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+    font-family: $letratitulo;
+    font-optical-sizing: auto;
+    font-weight: 380;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    flex: 0 0 auto; 
+    max-width: fit-content;
+  }
+
+  }
+
