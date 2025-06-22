@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
 
 /* HEADER */
 header {
@@ -69,8 +74,8 @@ footer {
   background-color: #f9fafb;
   height: 50vh;
   color: #848061;
- 
-  
+
+
 }
 
 .footer-container {
@@ -160,7 +165,7 @@ footer p strong {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 4.6em;
+  font-size: 5.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +182,7 @@ footer p strong {
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 320;
   font-size: 1em;
   margin: 5px;
 }
@@ -190,12 +195,12 @@ footer p strong {
   color: white;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 380;
   font-style: normal;
   letter-spacing: 1.5px;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.7em;
+  font-size: 0.8em;
   background-color: #806b5a;
   background-size: contain;
   padding: 10px 20px;
@@ -397,7 +402,7 @@ footer p strong {
 }
 
 .seccion5 .imagen-container2 {
-  width: 188%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -429,7 +434,9 @@ footer p strong {
   max-width: fit-content;
 }
 
+
 /* PAGINA MENU */
+
 .seccionM1,
 .seccionC1,
 .about1,
@@ -521,9 +528,10 @@ footer p strong {
 }
 
 .card {
-  margin-left: 15px !important;
-  
+  width: 350px !important;
+  /* Hacer que la tarjeta ocupe el 100% del ancho */
 }
+
 
 /* PAGINA GUIDE */
 .todointro {
@@ -617,11 +625,7 @@ footer p strong {
   margin-bottom: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* PAGINA ABOUT */
 .col a {
@@ -910,6 +914,7 @@ footer p strong {
   width: 100%;
 }
 
+
 @media (max-width: 500px) {
 
   /* HEADER */
@@ -1116,7 +1121,7 @@ footer p strong {
   }
 
   .seccionM1 h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   .seccionM2 {
@@ -1128,14 +1133,14 @@ footer p strong {
   }
 
   .seccionM2 h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   .card {
-    width: 17rem !important;
+    width: 100% !important;
     /* Hacer que la tarjeta ocupe el 100% del ancho */
-    margin-left: 75px !important;
-
+    margin: 0% !important;
+    margin-right: none;
 
   }
 
@@ -1143,29 +1148,30 @@ footer p strong {
   /* PAGINA GUIDE */
   .production {
     height: 20vh;
-  }
 
-  .production p {
-    font-size: 0.6em;
-  }
+    p {
+      font-size: 0.6em;
+    }
 
-  .production h1 {
-    font-size: 2.5em;
+    h1 {
+      font-size: 2.3em;
+    }
+
   }
 
   .introduction {
     display: flex;
     flex-direction: column;
-  }
 
-  .introduction h2 {
-    font-size: 0.9em;
-    margin-top: 0px;
-  }
+    h2 {
+      font-size: 0.9em;
+      margin-top: 0px;
+    }
 
-  .introduction p {
-    font-size: 0.7em;
-    padding-bottom: 0px;
+    p {
+      font-size: 0.6em;
+      padding-bottom: 0px;
+    }
   }
 
   .intro2 {
@@ -1191,8 +1197,8 @@ footer p strong {
   }
 
   .todointro img {
-    height: 25vh;
-    width: 40vh;
+    height: 30vh;
+    width: 100%;
     margin-bottom: 40px;
   }
 
@@ -1200,34 +1206,33 @@ footer p strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h3 {
+      font-size: 1em;
+      color: #a2998e;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 0.5em;
+      padding-left: 20px;
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+
+    img {
+      height: 30vh;
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  .steps h3 {
-    font-size: 1em;
-    color: #a2998e;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-  }
-
-  .steps p {
-    font-size: 0.6em;
-    padding-left: 10px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-  }
-
-  .steps img {
-    height: 25vh;
-    width: 40vh;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   /* ABOUT */
   .about1 {
@@ -1239,33 +1244,35 @@ footer p strong {
   }
 
   .about1 h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
+
   .seccion31a {
     height: 20vh;
     margin-top: 30px;
-    
+
     h2 {
       font-size: 1.5em;
-      
+
     }
-  p {
-    font-size: 0.6em;
-  }
+
+    p {
+      font-size: 0.6em;
+    }
 
   }
-
 
   .comentarios {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%; 
-    display: block;  /* Cambiar a bloque o columna si es necesario */
-    padding: 10px;  
-  
-   
+    height: 50%;
+    display: block;
+    /* Cambiar a bloque o columna si es necesario */
+    padding: 10px;
+
+
   }
 
   /* CONTACT */
@@ -1278,7 +1285,7 @@ footer p strong {
   }
 
   .seccionC1 h1 {
-    font-size: 3em;
+    font-size: 2.3em;
   }
 
   .seccionC1 {
@@ -1344,5 +1351,376 @@ footer p strong {
     width: 100%;
   }
 }
+
+
+@media (min-width: 501px) and (max-width: 1400px) {
+
+  /* FOOTER */
+  footer {
+    height: 35vh;
+    letter-spacing: 0.5px;
+
+    h3 {
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    p strong {
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+  }
+
+  .footer-hours {
+    display: none;
+  }
+
+  /* INDEX */
+  .seccion1 {
+    height: 50vh;
+
+    .H1primero {
+      font-size: 4.7em;
+    }
+  }
+
+  .seccion2 .jean {
+    height: 90vh;
+  }
+
+  .seccion2 .bar {
+    height: 90vh;
+  }
+
+  .seccion31 {
+    height: 30vh;
+  }
+
+  .seccion3 {
+    height: 50vh;
+  }
+
+  .seccion4 {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .seccion4 .texto4 {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .seccion4 h2 {
+    font-size: 1.5em;
+  }
+
+  .seccion4 p {
+    font-size: 0.7em;
+    letter-spacing: 0.7px;
+    line-height: 2;
+    font-weight: 350;
+  }
+
+  .seccion4 .menu-button {
+    font-size: 0.7em;
+    margin-top: 3px;
+    padding: 6px 12px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    border-radius: 0%;
+  }
+
+  .seccion4 .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .seccion4 .image {
+    height: 40vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .seccion5 .columna5 {
+    display: none;
+  }
+
+  .seccion5 .image2 {
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+
+  /* PAGINA MENU */
+  .seccionM1,
+  .seccionC1,
+  .about1,
+  .production,
+  .seccionM2 {
+    height: 22vh;
+
+    h1 {
+      font-size: 4em;
+
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+
+  }
+
+  .seccionM1 h1,
+  .seccionC1 h1,
+  .about1 h1,
+  .production h1,
+  .seccionM2 h1,
+  .seccionM2 h2 {
+    font-size: 3.8em;
+  }
+
+  .card {
+
+    width: 100% !important;
+    /* Hacer que la tarjeta ocupe el 100% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card-title {
+
+    font-size: 0.8em;
+
+  }
+
+  .card-text {
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+
+
+  /* PAGINA GUIDE */
+
+  .introduction {
+
+
+    h2 {
+      font-size: 0.9em;
+      margin-top: 0px;
+    }
+
+    p {
+      font-size: 0.7em;
+      padding-bottom: 0px;
+    }
+  }
+
+  .intro2 {
+    display: none;
+  }
+
+  .intro {
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .willneed {
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .brew {
+    display: none;
+  }
+
+  .todointro img {
+    height: 40vh;
+    width: 70vh;
+    margin-bottom: 40px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1em;
+      color: #a2998e;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 0.7em;
+      padding-left: 10px;
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+
+    img {
+      height: 40vh;
+      width: 70vh;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* ABOUT */
+  .seccion31a {
+    height: 20vh;
+    margin-top: 30px;
+
+    h2 {
+      font-size: 1.8em;
+
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+
+  }
+
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    display: block;
+    /* Cambiar a bloque o columna si es necesario */
+    padding: 40px;
+    gap: 40px !important;
+
+  }
+
+  .comments {
+    height: 30vh;
+
+  }
+
+  /* CONTACT */
+
+  .seccionC2 {
+    background-image: url(../fotos/1.jpg);
+    background-size: cover;
+    /* La imagen cubre todo el fondo */
+    background-position: center center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* No repite la imagen */
+    height: 32vh;
+  }
+
+  .primerafila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .seccionC2 .email {
+    font-size: 1.5em;
+    margin-left: 20px;
+    padding-top: 45px;
+    color: white;
+  }
+
+  .seccionC2 .formulario {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionC2 .name {
+    height: 2vh;
+    width: 15vh;
+  }
+
+  .seccionC2 .adress {
+    height: 2vh;
+    width: 15vh;
+  }
+
+  .segundafila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionC2 .requirements {
+    height: 10vh;
+    width: 32vh;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .submit1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionC2 .submit {
+    padding: 5px 10px;
+    font-size: 0.7em;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #8c5d25;
+  }
+
+  .maps {
+    height: 30vh;
+    width: 100%;
+  }
+}
+
 
 /*# sourceMappingURL=estilos.css.map */

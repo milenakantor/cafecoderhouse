@@ -190,7 +190,7 @@
   .seccion5 {
     display: flex;
     justify-content: space-between;
-    background-color: $hielo;
+    background-color: #f1f0ed;
 
     .columna5 {
         display: flex;
@@ -223,14 +223,14 @@
       
        
   .imagen-container2 {
-    width: 188%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
   }
 
   .image2 {
-    width: 100%;
+    width: 100px;
     height: 500px;
     object-fit: cover; 
   }
